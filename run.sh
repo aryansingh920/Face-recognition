@@ -1,4 +1,13 @@
+#!/bin/bash
 
+FOLDER_NAME="Faces"
+
+if [ ! -d "$FOLDER_NAME" ]; then
+  mkdir "$FOLDER_NAME"
+  echo "Folder created: $FOLDER_NAME"
+else
+  echo "Folder already exists: $FOLDER_NAME"
+fi
 
 python -m pip install --upgrade pip
 
